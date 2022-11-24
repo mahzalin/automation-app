@@ -20,5 +20,5 @@ Route::get('/', function () {
 //Auth
 Route::prefix('oauth')->namespace('Panel\Auth')->group(function () {
     Route::post('register', [RegisterController::class, 'register']);
-    Route::post('login', 'LoginInitController@login');
+//    Route::post('login', 'LoginInitController@login');
 });
