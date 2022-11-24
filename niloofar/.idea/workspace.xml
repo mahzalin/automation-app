@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26d82a77-833d-4f7f-aadb-fba40eff0976" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../automation-task/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../automation-task/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/TrustHosts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/ValidateSignature.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Models/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/cors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/hashing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/logging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/sanctum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/database/seeders/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/resources/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation-task/automation-task/vite.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Hz6CtVZ8NHOOEwYXNOcUZI2DDq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26d82a77-833d-4f7f-aadb-fba40eff0976" name="Default Changelist" comment="" />
+      <created>1669275440704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669275440704</updated>
+      <workItem from="1669275442005" duration="417000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
