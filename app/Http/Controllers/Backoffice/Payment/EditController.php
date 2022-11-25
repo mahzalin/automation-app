@@ -18,11 +18,7 @@ class EditController extends Controller
         $users = User::query()->orderBy('created_at', 'DESC')
             ->get();
 
-        return view('backoffice.payment.edit',
-            [
-                'users' => compact('users'),
-                'transaction' => compact('transaction'),
-            ]);
+        return view('backoffice.payment.edit')->with(compact('users'))->with(compact('transaction'));
     }
 
     public function edit($transactionID, EditRequest $request)
@@ -35,7 +31,7 @@ class EditController extends Controller
                 'amount' => $inputs['amount']
             ]);
 
-        return redirect('/backoffice/payment/edit/' . $transactionID);
+        return redirect('/backoffice/payment');
     }
 
     public function changeStatus($transactionID, EditStatusRequest $request)
@@ -52,6 +48,6 @@ class EditController extends Controller
                 'status' => Transaction::getStatusIdByName($status)
             ]);
 
-        return redirect('/backoffice/payment/edit/' . $transactionID);
+        return redirect('/backoffice/payment');
     }
 }

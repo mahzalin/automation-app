@@ -56,7 +56,7 @@ Route::prefix('backoffice')->namespace('Panel\File')->middleware('authentication
     Route::prefix('payment')->namespace('Panel\Payment')->group(function () {
         Route::get('/', [BackofficeListController::class, 'index'])->middleware('permission:payment_list');
         Route::get('/edit/{id}', [EditController::class, 'getEdit'])->middleware('permission:payment_edit');
-        Route::put('/edit/{id}', [EditController::class, 'edit'])->middleware('permission:payment_edit');
-        Route::put('/editStatus/{id}', [EditController::class, 'changeStatus'])->middleware('permission:payment_status_changing');
+        Route::put('/edit/{id}', [EditController::class, 'edit'])->name('paymentEdit')->middleware('permission:payment_edit');
+        Route::put('/editStatus/{id}', [EditController::class, 'changeStatus'])->name('paymentStatus')->middleware('permission:payment_status_changing');
     });
 });

@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->integer('sender_id');
-            $table->integer('receiver_id');
+            $table->unsignedBigInteger('sender_id');
+            $table->unsignedBigInteger('receiver_id');
             $table->float('amount');
-            $table->tinyInteger('status');
+            $table->smallInteger('status');
             $table->timestamps();
         });
     }
