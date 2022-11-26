@@ -19,10 +19,17 @@
                     <li><a href="#">Welcome, {{ \Auth::user()->name }}</a></li>
                     <li><a href="{{ url('payment') }}">Payments</a></li>
                     <li><a href="{{ url('payment/add') }}">add request</a></li>
+                    @if (count(\Auth::user()->userPermissions) > 0)
+                        <li>
+                            <a href="{{ url('backoffice/payment') }}">
+                                Manage Payments
+                                <span class="font-10">(as an admin)</span>
+                            </a>
+                        </li>
+                    @endif
                     <li><a href="{{ url('oauth/logout') }}">Sign Out</a></li>
                 @endif
             </ul>
         </div>
-
     </div>
 </nav>

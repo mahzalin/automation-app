@@ -80,6 +80,10 @@ a:active { text-decoration: none; }
     padding: 5px;
 }
 
+.font-10 {
+    font-size: 10px;
+}
+
 .warning-flash {
     background: #ef5a3a;
     padding: 5px;

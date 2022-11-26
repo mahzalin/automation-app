@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 
-use App\Models\User;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,20 +17,11 @@ class Authentication
      */
     public function handle($request, Closure $next)
     {
-        if ($request->cookie('access_token')) {
-            $user = User::where('token', $request->cookie('access_token'))
-                ->first();
-
-            if (!empty($user)) {
-                Auth::setUser($user);
-
-                return $next($request);
-            }
+        if (Auth::check()) {
+            return $next($request);
         }
 
-        return $next($request);
-        //TODO
-//        return redirect('/')->with('no access');
+        return redirect('oauth/login')->with('message', 'no access');
     }
 }
 

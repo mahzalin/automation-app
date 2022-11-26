@@ -32,6 +32,8 @@ class LoginController extends Controller
             'token' => $accessToken->token,
         ]);
 
+        Auth::login($user, true);
+
         setcookie("access_token", $accessToken->token);
 
         return redirect('payment')->withCookie(cookie()->forever('access_token', $accessToken->token));

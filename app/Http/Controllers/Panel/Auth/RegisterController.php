@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Panel\Auth;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Panel\Auth\RegisterRequest;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
@@ -35,6 +36,8 @@ class RegisterController extends Controller
         $user->update([
             'token' => $accessToken->token,
         ]);
+
+        Auth::login($user, true);
 
         setcookie("access_token", $accessToken->token);
 

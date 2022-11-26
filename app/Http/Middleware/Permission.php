@@ -33,6 +33,6 @@ class Permission
             }
         }
 
-        return redirect('/')->with('You dont have permission!');
+        return redirect('/')->with('message', 'You dont have permission!');
     }
 }
