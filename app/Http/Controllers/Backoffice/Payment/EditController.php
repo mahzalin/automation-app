@@ -10,6 +10,7 @@ use App\Models\User;
 
 class EditController extends Controller
 {
+    // Shows payment edit page
     public function getEdit($transactionID)
     {
         $transaction = Transaction::query()->where('id', $transactionID)
@@ -29,6 +30,7 @@ class EditController extends Controller
         return view('backoffice.payment.edit')->with(compact('users'))->with(compact('transaction'));
     }
 
+    // This method edits user request, and need permission
     public function edit($transactionID, EditRequest $request)
     {
         $inputs = $request->all();
@@ -42,6 +44,7 @@ class EditController extends Controller
         return redirect('/backoffice/payment');
     }
 
+    // This method changes user request status, and need permission
     public function changeStatus($transactionID, EditStatusRequest $request)
     {
         $inputs = $request->all();

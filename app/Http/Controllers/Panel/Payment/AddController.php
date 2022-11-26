@@ -11,6 +11,7 @@ use Illuminate\Support\Arr;
 
 class AddController extends Controller
 {
+    // Add payment request page
     public function getAddRequest()
     {
         $users = User::query()
@@ -27,6 +28,8 @@ class AddController extends Controller
         return view('panel.payment.add', compact('users'));
     }
 
+    // Insert new request by user
+    // If our request has files, this method saves the files in /storage/app/files path
     public function addRequest(AddRequest $request)
     {
         $inputs = $request->all();

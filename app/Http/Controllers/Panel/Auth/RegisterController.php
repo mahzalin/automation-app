@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
+    // Register page
     public function getRegister()
     {
         return view('panel.auth.register');

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 class DownloadController extends Controller
 {
+    // This method is for downloading files
     public function downloadFile($fileID)
     {
         $file = File::find($fileID);

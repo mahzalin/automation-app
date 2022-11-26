@@ -10,11 +10,13 @@ use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
+    // Login page
     public function getLogin()
     {
         return view('panel.auth.login');
     }
 
+    // User can login with this method
     public function login(LoginRequest $request)
     {
         $user = User::query()

@@ -7,6 +7,7 @@ use App\Models\Transaction;
 
 class ListController extends Controller
 {
+    // List of user payment requests
     public function index()
     {
         $transactions = Transaction::query()
