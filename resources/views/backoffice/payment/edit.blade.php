@@ -2,9 +2,10 @@
 
 @section('content')
     <h3 class="m-b-20">Edit new request</h3>
-    @if(empty($users) || count($users) == 0)
-        <div class="warning-flash">There is no any user yet.</div>
-    @else
+
+    @include('partials.flash_notification')
+
+    @if(!empty($users) && count($users) != 0 && !empty($transaction))
         <div class="container">
             <form method="post" action="{{ route('paymentEdit', ['id' => $transaction['id']]) }}" enctype="multipart/form-data">
                 {{csrf_field()}}
@@ -12,6 +13,9 @@
                 <div class="control-group m-b-10" >
                     <label>Amount</label>
                     <input type="text" class="form-control" name="amount" placeholder="amount" required="required" value="{{ $transaction['amount'] }}">
+                    @error('amount')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="control-group m-b-10" >
                     <label>Receiver</label>
@@ -28,6 +32,9 @@
                             @endif
                         @endforeach
                     </select>
+                    @error('receiverID')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <button type="submit" class="btn btn-primary" style="margin-top:10px">Submit</button>
             </form>

@@ -22,13 +22,8 @@ class LoginController extends Controller
             ->first();
 
         if (empty($user) || !Hash::check($request->get('password'), $user->password)) {
-            return view(
-                'auth.login',
-                [
-                    'error' => 'User not found!',
-                    'error_type' => 'danger',
-                ]
-            );
+            return view('panel.auth.login')
+                ->with('message', 'User not found');
         }
 
         $accessToken = $user->createToken('AuthToken')->accessToken;
@@ -39,7 +34,7 @@ class LoginController extends Controller
 
         setcookie("access_token", $accessToken->token);
 
-        return redirect('/automation')->withCookie(cookie()->forever('access_token', $accessToken->token));
+        return redirect('payment')->withCookie(cookie()->forever('access_token', $accessToken->token));
     }
 
     public function logout()

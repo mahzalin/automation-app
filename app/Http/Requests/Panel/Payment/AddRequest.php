@@ -26,7 +26,7 @@ class AddRequest extends FormRequest
         return [
             'amount' => 'required|numeric',
             'receiverID' => 'required|numeric',
-            'files.*' => 'required|mimes:pdf|max:10240'
+            'files.*' => 'nullable|mimes:pdf|max:10240'
         ];
     }
 }

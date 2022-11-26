@@ -20,7 +20,8 @@ class RegisterController extends Controller
 
         if (!empty(User::query()->where('email', $inputs['email'])->first())) {
 
-            return redirect('oauth/register');
+            return view('panel.auth.register')
+                ->with('message', 'Email exist');
         }
 
         $user = User::query()->create([
@@ -37,6 +38,6 @@ class RegisterController extends Controller
 
         setcookie("access_token", $accessToken->token);
 
-        return redirect('automation')->withCookie(cookie()->forever('access_token', $accessToken->token));
+        return redirect('/automation')->withCookie(cookie()->forever('access_token', $accessToken->token));
     }
 }

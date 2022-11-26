@@ -7,6 +7,7 @@ use App\Http\Requests\Panel\Payment\AddRequest;
 use App\Models\File;
 use App\Models\Transaction;
 use App\Models\User;
+use Illuminate\Support\Arr;
 
 class AddController extends Controller
 {
@@ -17,6 +18,11 @@ class AddController extends Controller
             ->whereNot('id', auth()->id())
             ->orderBy('created_at', 'DESC')
             ->get();
+
+        if (empty($users) || count($users) == 0) {
+            return view('panel.payment.add', compact('users'))
+                ->with('message', 'We dont have any user except you');
+        }
 
         return view('panel.payment.add', compact('users'));
     }
@@ -32,15 +38,17 @@ class AddController extends Controller
             'status' => Transaction::getStatusIdByName(Transaction::TRX_PENDING),
         ]);
 
-        foreach($request->file('files') as $file) {
-            $path = $file->store('files');
+        if (Arr::has($request, 'files')) {
+            foreach($request->file('files') as $file) {
+                $path = $file->store('files');
 
-            File::query()->create([
-                'transaction_id' => $transaction->id,
-                'size' => $file->getSize(),
-                'name' => $file->getClientOriginalName(),
-                'path' => $path,
-            ]);
+                File::query()->create([
+                    'transaction_id' => $transaction->id,
+                    'size' => $file->getSize(),
+                    'name' => $file->getClientOriginalName(),
+                    'path' => $path,
+                ]);
+            }
         }
 
         return redirect('/payment');

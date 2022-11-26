@@ -29,8 +29,9 @@ class Authentication
             }
         }
 
-        // TODO error
         return $next($request);
+        //TODO
+//        return redirect('/')->with('no access');
     }
 }
 

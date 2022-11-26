@@ -1,6 +1,8 @@
 @extends('.layouts.master')
 
 @section('content')
+    @include('partials.flash_notification')
+
     @if(count($transactions) > 0)
         <h3 class="m-b-20">Payments list</h3>
         <table class="table table-sm">
@@ -34,7 +36,5 @@
             @endforeach
             </tbody>
         </table>
-    @else
-        <div class="warning-flash">You don't have any payment request yet.</div>
     @endif
 @endsection

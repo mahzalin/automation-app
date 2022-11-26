@@ -13,6 +13,11 @@ class ListController extends Controller
             ->orderBy('created_at', 'DESC')
             ->get();
 
+        if (empty($transactions) || count($transactions) == 0) {
+            return view('backoffice.payment.index', compact('transactions'))
+                ->with('message', 'You dont have any transaction');
+        }
+
         return view('backoffice.payment.index', compact('transactions'));
     }
 }

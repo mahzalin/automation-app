@@ -18,6 +18,14 @@ class EditController extends Controller
         $users = User::query()->orderBy('created_at', 'DESC')
             ->get();
 
+        if (empty($transaction) || empty($users) || count($users) == 0) {
+
+            return view('backoffice.payment.edit')
+                ->with(compact('users'))
+                ->with(compact('transaction'))
+                ->with('message', 'Transaction not found');
+        }
+
         return view('backoffice.payment.edit')->with(compact('users'))->with(compact('transaction'));
     }
 
