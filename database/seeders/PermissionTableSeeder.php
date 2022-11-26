@@ -1,22 +1,20 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Seeders;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Permission;
+use Illuminate\Database\Seeder;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
- */
-class PermissionFactory extends Factory
+class PermissionTableSeeder extends Seeder
 {
     /**
-     * Define the model's default state.
+     * Run the database seeders.
      *
-     * @return array<string, mixed>
+     * @return void
      */
-    public function definition()
+    public function run()
     {
-        return [
+        $permissions = [
             [
                 'id' => 1,
                 'title' => 'payment_list',
@@ -33,5 +31,9 @@ class PermissionFactory extends Factory
                 'guard_name' => 'api',
             ],
         ];
+
+        foreach ($permissions as $permission) {
+            Permission::create($permission);
+        }
     }
 }

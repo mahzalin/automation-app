@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserPermission extends Model
 {
+    public $timestamps = false;
+
     protected $fillable = [
         'permission_id',
         'model_type',
@@ -13,8 +15,6 @@ class UserPermission extends Model
     ];
 
     public $incrementing = false;
-
-    public $timestamps = false;
 
     public function permission()
     {

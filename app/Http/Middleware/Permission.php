@@ -18,16 +18,19 @@ class Permission
      */
     public function handle(Request $request, Closure $next, $permission)
     {
-        $userPermission = cache()->remember('user_' . auth()->id() . ':permission_' . $permission,
-            Carbon::now()->addDay(),
-            function () use ($permission) {
-                return auth()->user()->userPermissions()
-                    ->where('title', $permission)
-                    ->first();
-            });
-        if (!empty($userPermission)) {
+        if (!empty(auth()->user())) {
+            $userPermission = cache()->remember('user_' . auth()->id() . ':permission_' . $permission,
+                Carbon::now()->addDay(),
+                function () use ($permission) {
+                    return auth()->user()->userPermissions()
+                        ->where('title', $permission)
+                        ->first();
+                });
 
-            return $next($request);
+            if (!empty($userPermission)) {
+
+                return $next($request);
+            }
         }
 
         return redirect('/')->with('You dont have permission!');
